@@ -19,7 +19,7 @@ func main() {
 	a := flag.Args()
 
 	if len(a) == 0 {
-		fmt.Printf("Usage: $v isincode\n", os.Args[0])
+		fmt.Printf("Usage: %v isincode\n", os.Args[0])
 		os.Exit(1)
 	}
 
