@@ -7,7 +7,7 @@ import (
 	"os"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/tomarus/stock/internal/openfigi"
+	"github.com/tomarus/openfigi"
 )
 
 func main() {
@@ -28,7 +28,9 @@ func main() {
 		log.Fatal(err)
 	}
 
-	req.Exchange(*e)
+	if *e != "" {
+		req.Exchange(*e)
+	}
 
 	res, err := req.Do()
 	if err != nil {
