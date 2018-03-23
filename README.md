@@ -1,9 +1,11 @@
 OpenFIGI
 ========
 
-OpenFIGI is a golang package providing access to the [OpenFIGI API](https://openfigi.com/api)
+OpenFIGI is a golang package providing access to the [OpenFIGI API](https://openfigi.com/api) 
 
 ### What is OpenFIGI
+
+A FIGI is a Financial Instrument Global Identifier.
 
 OpenFIGI is your entry point to multiple tools for identifying, mapping and requesting a free and open symbology dataset. This user friendly platform provides the ultimate understanding for how a unique identifier combined with accurate, associated metadata can eliminate redundant mapping processes, streamline the trade workflow and reduce operational risk
 
