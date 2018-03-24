@@ -233,6 +233,11 @@ func setCache(key []byte, data []*FIGI) error {
 	}
 	c := rpool.Get()
 	defer c.Close() // nolint: errcheck
-	_, err := c.Do("SET", string(key), data)
+
+	js, err := json.Marshal(data)
+	if err != nil {
+		return err
+	}
+	_, err = c.Do("SET", string(key), string(js))
 	return err
 }
